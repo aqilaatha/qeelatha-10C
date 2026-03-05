@@ -1,0 +1,277 @@
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #89c2ff, #5b86e5);
+    color: #1f2f46;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    padding: 18px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 12px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background: white;
+    color: #3a4a6b;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background: #3a7bd5;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* ===== JUDUL ===== */
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 42px;
+    color: white;
+}
+
+/* ===== PRODUK GRID ===== */
+.daftar-produk {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 50px;
+}
+
+/* ===== CARD PRODUK ===== */
+.produk {
+    background: white;
+    border-radius: 25px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+.produk:hover {
+    transform: translateY(-10px);
+}
+
+.produk img {
+    width: 90px;   /* gambar lebih kecil */
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.produk h2 {
+    margin: 10px 0 5px;
+}
+
+.harga {
+    font-weight: bold;
+    color: #3a7bd5;
+}
+
+.deskripsi {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ===== FORM ===== */
+.formulir {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* 2 KOLOM FORM */
+.formulir form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* INPUT */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* TEXTAREA FULL LEBAR */
+form textarea {
+    grid-column: span 2;
+    resize: none;
+}
+
+/* BUTTON FULL LEBAR */
+form button {
+    grid-column: span 2;
+    padding: 14px;
+    border-radius: 30px;
+    border: none;
+    background: #3a7bd5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: #1e5fbf;
+    transform: scale(1.03);
+}
+
+/* ===== EVENT BOX ===== */
+.event-box {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    background: rgba(255,255,255,0.15);
+    color: white;
+}
+
+.artikel {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    font-family: Georgia, serif;
+    line-height: 1.8;
+}
+
+.artikel .penulis {
+    font-style: italic;
+    color: #0a294b;
+    margin-bottom: 20px;
+}
+
+.artikel .sampul {
+    width: 180px;
+    float: right;
+    margin: 0 0 20px 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.artikel blockquote {
+    font-style: italic;
+    padding-left: 20px;
+    margin: 20px 0;
+    border-left: 4px solid #1b476d;
+    color: #000307;
+    background-color: #6e9bc8;
+}
+
+.btn-kembali {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 16px;
+    background-color: #ffffff;
+    color: rgb(114, 144, 187);
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-kembali:hover {
+    background-color: #4072a3;
+}
+
+
+/* FORM KONTAK */
+.form {
+    max-width: 380px;      /* bikin form kecil */
+    margin: 30px auto;     /* biar di tengah */
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* LABEL */
+.form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* INPUT & TEXTAREA */
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* TEXTAREA */
+.form textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* BUTTON */
+.form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #3a7bd5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #1e5fbf;
+}
+
+.header{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.header img{
+    width: 100%;
+    height: auto;        /* supaya tidak blur */
+    max-height: 220px;   /* batasi tinggi */
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
